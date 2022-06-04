@@ -10,7 +10,7 @@ const apiKey = '899758bd068d693f89c18d6694531cfb';
 
 let app = express();
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 app.set('view engine', 'hbs');
 hbs.registerPartials(__dirname + '/views/partials');
